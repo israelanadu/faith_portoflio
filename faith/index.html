@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./home.js">
+</head>
+
+<body>
+    <header>
+        <i class="fa fa-phone"> 09012814587</i>
+        <i class="fa i">|</i>
+        <i class="fa fa-envelope"> princessjoseph645@gmail.com</i>
+    </header>
+    <div class="id">
+        <img src="./image/mk_loho.png" alt="">
+        <div class="icon"><i class="fa fa-google-plus"></i></div>
+        <div class="icon"> <i class="fa fa-linkedin"></i></div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="./home.html" class="active">HOME</a><span><a href="./home.html">HOME</a></span></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./contact">CONTACT</a></li>
+            <li><a href="./services">SERVICES</a></li>
+        </ul>
+    </div>
+    <div class="bodyi">
+        <h1>HI !!!</h1>
+        <h2>MY NAME IS Joseph Faith</h2>
+
+    </div>
+    <div class="bodyii">
+        <div class="img">
+            <img src="./image/faith1.png" alt="">
+        </div>
+        <p>Joseph Faith seamlessly blends advanced data analytics with a deep understanding of aquaculture and fisheries management, delivering data-driven 
+            insights that optimize operations and foster sustainable growth. Her unique ability to transform complex data into clear, actionable strategies,
+             coupled with strong communication and leadership, makes her an invaluable asset for driving innovation in the agricultural sector.</p>
+    </div>
+    <div class="detail">
+        <div><img src="./image/faith1.png" alt=""></div>
+    </div>
+    <div class="details">
+        <div>
+            <h2>ABOUT ME</h2>
+            <p>I'm Joseph Faith, a 22-year-old FUTO graduate passionate about data analysis and aquaculture.
+                 My skills include data visualization, statistical analysis, and database management, reinforced by certifications from Google, Duke, and Deloitte.
+                Beyond technical expertise, I excel in communication, critical thinking, and emotional intelligence.
+                 I've applied my knowledge as a fish farm consultant and honed leadership skills in student governance. 
+                 I'm eager to use my unique blend of data proficiency and industry insight to drive innovative, sustainable solutions. </p>
+        </div>
+        <div class="end">
+            <ul class="first">
+                <li><button onclick="document.getElementById('intro').innerHTML = mks;">Skills</button></li>
+                <li><button onclick="document.getElementById('intro').innerHTML = eds;">Education</button></li>
+                <li><button onclick="document.getElementById('intro').innerHTML = ces;">Certificate</button></li>
+            </ul>
+            <p id="intro"></p>
+            <script>
+                const arr = [`Data Analysis`, `Data Science`, `SQL Specialist`, `Aquaculture and Fisheries Management`, `Fish Breeding and Management`];
+                var mk = arr.length;
+                var mks = "<ul>";
+                for (i = 0; i < mk; i++) {
+                    mks += '<li>' + arr[i] + '</li>' + '<br>';
+                }
+                mks += "</ul>";
+            </script>
+            <script>
+                const arrs = [`B.Tech of Fisheries and Aquaculture`, `O Level WAEC Result`];
+                var ed = arrs.length;
+                var eds = "<ul>";
+                for (i = 0; i < ed; i++) {
+                    eds += '<li>' + arrs[i] + '</li>' + '<br>';
+                }
+                eds += "</ul>";
+            </script>
+            <script>
+                const ars = [`National Association of Fisheries Students Certification, Undergraduate in Bachelor of Fisheries and Aquaculture`,`Business Analytics with Excel`,
+                `Data Science Math Skills from Duke university`,`Data Analytics Project`,`Deloitte Certification in Data Analytics Job Simulation`,`Ask Questions to Make Data-Driven Decisions from Google`,
+                `Foundations: Data, Data, EveryWhere from Google`,`Prepare Date For Exploration from Google`];
+                var ce = ars.length;
+                var ces = "<ul>";
+                for (i = 0; i < ce; i++) {
+                    ces += '<li>' + ars[i] + '</li>' + '<br>';
+                }
+                mks += "</ul>";
+            </script>
+        </div>
+    </div>
+    <footer class="first">
+        <div>
+        <h2>Contact</h2>
+        <p>Get in Touch</p>
+        <i class="fa fa-phone"> 09012814587</i><br>
+        <i class="fa fa-envelope"> princessjoseph645@gmail.com</i><br>
+        <i class="fa fa-linkedin-square"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-whatsapp"></i>
+    </div>
+    </footer>
+    <footer class="second">
+        <form action="">
+            <input type="text" name="name" placeholder="israel" id="name"><br>
+            <input type="text" name="email" placeholder="princessjoseph645@gmail.com" id="email"><br>
+            <input type="text" name="message" placeholder="message" id="message"><br>
+            <button>submit</button>
+        </form>
+    </footer>
+    <footer class="end">
+        <p>All Right Reserve | Created By Joseph Faith</p>
+    </footer>
+</body>
+
+</html>
